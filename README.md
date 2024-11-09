@@ -13,7 +13,7 @@ In the project directory, you can run:
 
 ## Deployment
 
-Your Flow-Free-Solver project is deployed at: [https://kongesque.github.io/Flow-Free-Solver/](https://kongesque.github.io/Flow-Free-Solver/)
+The Flow-Free-Solver project is deployed at: [https://kongesque.github.io/Flow-Free-Solver/](https://kongesque.github.io/Flow-Free-Solver/)
 
 ## Learn More
 
