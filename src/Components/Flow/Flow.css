@@ -1,0 +1,17 @@
+.board{
+    display: flex;
+    margin: auto;
+    
+}
+
+.solvedBoard{
+    display: flex;
+    margin: auto;
+}
+
+.boxes{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #0f1b21;
+    cursor: pointer;
+}
