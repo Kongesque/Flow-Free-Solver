@@ -11,6 +11,10 @@ In the project directory, you can run:
 - **`npm run build`**: Builds the app for production in the `build` folder.
 - **`npm run eject`**: Copies configuration files for advanced customization (irreversible).
 
+## Deployment
+
+Your Flow-Free-Solver project is deployed at: [https://kongesque.github.io/Flow-Free-Solver/](https://kongesque.github.io/Flow-Free-Solver/)
+
 ## Learn More
 
 For additional setup or deployment options, see the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and [React documentation](https://reactjs.org/).
