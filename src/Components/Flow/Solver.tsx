@@ -169,7 +169,7 @@ const solveBoard = (board: Board): [Board | null, number, number] => {
     }
   
     const firstNum = 1
-    const [finalBoard, finalNodeCount] = explorePathsForNumber(board, sumPath, firstNum, pairs, nodeCount, startTime, 10000)
+    const [finalBoard, finalNodeCount] = explorePathsForNumber(board, sumPath, firstNum, pairs, nodeCount, startTime, 15000)
     const endTime = performance.now()
     
     return [finalBoard, finalNodeCount, endTime - startTime]
