@@ -4,11 +4,6 @@
     
 }
 
-.solvedBoard{
-    display: flex;
-    margin: auto;
-}
-
 .boxes{
     height: 30px;
     width: 30px;

@@ -117,13 +117,10 @@ const Flow = () => {
                 </select>
             </div>
             <div className="board">
-                {renderBoard()}
+                {solvedBoard ? displayBoard() : renderBoard()}
             </div>
             <button className='solve' onClick={solveBoard}>Solve</button>
             <button className='reset' onClick={() => resetBoard()}>Reset</button>
-            <div className="solvedBoard">
-                {displayBoard()}
-            </div>
         </div>
     );
 };
