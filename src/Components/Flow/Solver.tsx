@@ -166,7 +166,7 @@ const solveBoard = (board: Board): [Board | null, number, number] => {
       if (!pairs[number][0] || !pairs[number][1]) {
         throw new Error(`Number ${number} does not have a pair`)
       } 
-    }
+    } 
   
     const firstNum = 1
     const [finalBoard, finalNodeCount] = explorePathsForNumber(board, sumPath, firstNum, pairs, nodeCount, startTime, 15000)
