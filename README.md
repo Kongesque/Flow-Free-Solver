@@ -1,5 +1,7 @@
 # Flow Free Solver
 
+Flow Free, also know as Number Link, is a widely popular puzzle game that challenges players to connect pairs of colored dots on a grid. The goal is to draw paths between each pair of dots such that the paths do not overlap, and the entire grid is occupied. Players must connect dots of the same color while ensuring paths do not cross.
+
 The Flow Free Solver project employs a backtracking approach with Breadth-First Search (BFS) and A* algorithm heuristics to solve Flow-Free puzzles by connecting pairs of colored dots.
 
 ## Solver Method: Backtracking with BFS and A* Algorithm
