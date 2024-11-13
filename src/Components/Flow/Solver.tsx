@@ -1,7 +1,3 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-
-
 type Cell = [number, number]
 type Board = number[][]
 
@@ -187,11 +183,3 @@ export const solve = (board: any) => {
         return null;
     }
 };
-
-const Solver = () => {
-    return (
-        <div>Solver</div>
-    );
-};
-
-export default Solver;

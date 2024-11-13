@@ -212,5 +212,5 @@ board7 = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
 ]
 
-solveBoard(board4)
+solveBoard(board1)
 

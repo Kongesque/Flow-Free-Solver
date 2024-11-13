@@ -9,4 +9,8 @@
     width: 30px;
     border: 2px solid #0f1b21;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+

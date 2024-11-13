@@ -82,7 +82,7 @@ board5 = [
 ]
 
 start_time = time.time()
-solved_board = solve(board4, len(board4))
+solved_board = solve(board5, len(board5))
 end_time = time.time() 
 print('Solved: ')
 display_matrix(solved_board)
