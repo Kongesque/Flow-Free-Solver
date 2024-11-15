@@ -29,12 +29,15 @@ $$
 
 - **Terminal Cell Connection**: Terminal cells must have exactly one connecting path to another cell of the same color, maintaining a link between pairs. This constraint is represented as:
 
-  $$Cell_{ij} = N_{ij} = 1, \text{ if } Cell_{ij} > 0$$
-
+$$
+Cell_{ij} = N_{ij} = 1, \text{ if } Cell_{ij} > 0
+$$
 
 - **Continuous Path for Connecting Cells**: Cells between terminals must connect with exactly two adjacent cells of the same color, or zero if unoccupied. This is expressed as:
 
-  $$Cell_{ij} = N_{ij} = 2 \text{ or } N_{ij} = 0, \text{ if } Cell_{ij} = 0$$
+$$
+Cell_{ij} = N_{ij} = 2 \text{ or } N_{ij} = 0, \text{ if } Cell_{ij} = 0
+$$
 
   where $N_{ij}$ represents the cell's neighbors, determined by Manhattan distance. This constraint ensures that paths are continuous without overlapping.
 
