@@ -19,23 +19,24 @@ Here’s how the "Solver Method 2: SAT Solver Approach" can be integrated into t
 This approach frames Flow Free as a Constraint Satisfaction Problem (CSP) and translates game requirements into logical formulas suitable for SAT solvers, such as the Z3 solver in Python. The SAT solver leverages constraints to ensure all puzzle requirements are met. Here’s how the constraints are structured:
 
 - **Single-Color Cell Requirement**: Each cell on the grid must contain only one color, ensuring there are no overlaps. This is expressed as:
-  \[
+
+$$
   Cell_{ij} = \begin{cases}
    Cell_{ij} &\text{if } Cell_{ij}>0 \\
    Cell_{ij}>0 &\text{if } Cell_{ij}=0
   \end{cases}
-  \]
+$$
 
 - **Terminal Cell Connection**: Terminal cells must have exactly one connecting path to another cell of the same color, maintaining a link between pairs. This constraint is represented as:
-  \[
-  Cell_{ij} = N_{ij} = 1, \text{ if } Cell_{ij} > 0
-  \]
+
+  $$Cell_{ij} = N_{ij} = 1, \text{ if } Cell_{ij} > 0$$
+
 
 - **Continuous Path for Connecting Cells**: Cells between terminals must connect with exactly two adjacent cells of the same color, or zero if unoccupied. This is expressed as:
-  \[
-  Cell_{ij} = N_{ij} = 2 \text{ or } N_{ij} = 0, \text{ if } Cell_{ij} = 0
-  \]
-  where \( N_{ij} \) represents the cell's neighbors, determined by Manhattan distance. This constraint ensures that paths are continuous without overlapping.
+
+  $$Cell_{ij} = N_{ij} = 2 \text{ or } N_{ij} = 0, \text{ if } Cell_{ij} = 0$$
+
+  where $N_{ij}$ represents the cell's neighbors, determined by Manhattan distance. This constraint ensures that paths are continuous without overlapping.
 
 ---
 
