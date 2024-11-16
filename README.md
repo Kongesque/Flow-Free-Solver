@@ -43,14 +43,28 @@ $$
 
 ---
 
-## Available Commands
+## Setup Instructions
 
-In the project directory, you can run:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Kongesque/Flow-Free-Solver.git
+cd Flow-Free-Solver
+```
 
-- **`npm start`**: Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
-- **`npm test`**: Starts the interactive test runner.
-- **`npm run build`**: Builds the app for production in the `build` folder.
-- **`npm run eject`**: Copies configuration files for advanced customization (irreversible).
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Available Commands
+- **Start Development Mode:** Run the app locally at http://localhost:3000
+     ```bash
+     npm start
+     ```
+- **Build for Production:** Create a production-ready build in the `build` folder
+     ```bash
+     npm run build
+     ```
 
 ## Deployment
 
