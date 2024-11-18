@@ -109,18 +109,19 @@ const Flow = () => {
         <div className='container'>
             <h1 className='title'>Flow Free Solver</h1>
             
-            <div className="size">
+            <div className="board">
+                {solvedBoard ? displayBoard() : renderBoard()}
+            </div>
+            <div className="control">
                 <select className='size-dropdown' value={size} onChange={handleSizeChange}>
                     {sizeOptions.map(option => (
                         <option key={option} value={option}>{option}x{option}</option>
                     ))}
                 </select>
+
+                <button className='solve' onClick={solveBoard}>Solve</button>
+                <button className='reset' onClick={() => resetBoard()}>Reset</button>
             </div>
-            <div className="board">
-                {solvedBoard ? displayBoard() : renderBoard()}
-            </div>
-            <button className='solve' onClick={solveBoard}>Solve</button>
-            <button className='reset' onClick={() => resetBoard()}>Reset</button>
         </div>
     );
 };
