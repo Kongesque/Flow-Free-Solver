@@ -12,8 +12,6 @@ This approach explores paths recursively to connect pairs of dots, with the foll
 - **Heuristic Optimization**: The A* algorithm applies heuristics to estimate the minimum distance between each color pair. If a path does not satisfy this heuristic, the algorithm backtracks to explore alternative paths.
 - **Lookahead Check**: The `lookaheadHeuristics` function assesses whether each color can feasibly connect to its target. If connection is deemed unfeasible, the algorithm skips to the next path, reducing unnecessary computations.
 
-Here’s how the "Solver Method 2: SAT Solver Approach" can be integrated into the README:
-
 ## Solver Method 2: SAT Solver Approach
 
 This approach frames Flow Free as a Constraint Satisfaction Problem (CSP) and translates game requirements into logical formulas suitable for SAT solvers, such as the Z3 solver in Python. The SAT solver leverages constraints to ensure all puzzle requirements are met. Here’s how the constraints are structured:
@@ -40,9 +38,7 @@ Cell_{ij} = N_{ij} = 2 \text{ or } N_{ij} = 0, \text{ if } Cell_{ij} = 0
 $$
 
   where $N_{ij}$ represents the cell's neighbors, determined by Manhattan distance. This constraint ensures that paths are continuous without overlapping.
-
----
-
+  
 ## Setup Instructions
 
 ### 1. Clone the Repository
